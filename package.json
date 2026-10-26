@@ -1,0 +1,74 @@
+{
+  "name": "worktree-boot",
+  "version": "0.1.1",
+  "description": "Instant git worktree bootstrap with CoW node_modules, env copy, and port shifting for parallel agents",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "worktree-boot": "./dist/cli.js"
+  },
+  "main": "./dist/bridge.js",
+  "exports": {
+    ".": {
+      "types": "./dist/bridge.d.ts",
+      "import": "./dist/bridge.js",
+      "default": "./dist/bridge.js"
+    },
+    "./bridge": {
+      "types": "./dist/bridge.d.ts",
+      "import": "./dist/bridge.js",
+      "default": "./dist/bridge.js"
+    }
+  },
+  "types": "./dist/bridge.d.ts",
+  "typesVersions": {
+    "*": {
+      "bridge": [
+        "./dist/bridge.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "jsr.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && vitest run",
+    "prepublishOnly": "npm run build",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "publint": "^0.3.12",
+    "typescript": "^5.7.2",
+    "vitest": "^3.0.5"
+  },
+  "author": "Augusto Cerrutti <augustocerruttisatto@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanchingyg/worktree-boot.git"
+  },
+  "mcpName": "io.github.kanchingyg/worktree-boot",
+  "homepage": "https://github.com/kanchingyg/worktree-boot#readme",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "cli",
+    "typescript",
+    "rust",
+    "git",
+    "git-worktree",
+    "ai-agents",
+    "parallel-agents",
+    "claude-code",
+    "cursor"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@kanchingyg/worktree-boot",
+  "version": "0.1.1",
+  "description": "Instant git worktree bootstrap with CoW node_modules, env copy, and port shifting for parallel agents",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/bridge.ts",
+    "./bridge": "./src/bridge.ts"
+  },
+  "publish": {
+    "include": [
+      "src/**/*.ts",
+      "LICENSE",
+      "README.md",
+      "SKILL.md",
+      "jsr.json"
+    ],
+    "exclude": [
+      "src/**/*.test.ts",
+      "src/**/*.spec.ts"
+    ]
+  }
+}
