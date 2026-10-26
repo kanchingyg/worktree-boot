@@ -4,4 +4,4 @@ pub mod paths;
 pub mod port_shift;
 pub mod worktree;
 
-pub const VERSION: &str = "0.1.0";
+pub const VERSION: &str = "0.1.1";

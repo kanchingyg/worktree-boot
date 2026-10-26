@@ -6,10 +6,6 @@
 [![JSR Score](https://jsr.io/badges/@kanchingyg/worktree-boot/score)](https://jsr.io/@kanchingyg/worktree-boot/score)
 [![Rust](https://img.shields.io/badge/engine-Rust_%2B_TypeScript-dea584)](https://github.com/kanchingyg/worktree-boot)
 [![license](https://img.shields.io/github/license/kanchingyg/worktree-boot)](https://github.com/kanchingyg/worktree-boot/blob/HEAD/LICENSE)
-[![npm](https://img.shields.io/npm/v/worktree-boot)](https://www.npmjs.com/package/worktree-boot)
-[![JSR](https://jsr.io/badges/@kanchingyg/worktree-boot)](https://jsr.io/@kanchingyg/worktree-boot)
-[![Rust](https://img.shields.io/badge/engine-Rust-dea584)](https://github.com/kanchingyg/worktree-boot)
-[![license](https://img.shields.io/github/license/kanchingyg/worktree-boot)](https://github.com/kanchingyg/worktree-boot/blob/HEAD/LICENSE)
 
 **One line:** `npx worktree-boot my-branch` (or `bunx worktree-boot my-branch`): `git worktree` + copy-on-write `node_modules` + shifted `.env` ports in about a second.
 

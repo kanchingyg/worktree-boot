@@ -7,7 +7,7 @@ import { buildLocalLlmEnv, mergeEnvLines, shiftPortsInText } from "./env-port-sh
 import { assertWorktreePathContained, sanitizeBranch, worktreePath } from "./paths.js";
 import { cloneCowArtifacts, copyIgnoredEnvFiles } from "./worktree-cow.js";
 
-const VERSION = "0.1.0";
+const VERSION = "0.1.1";
 
 const PROPAGATE_KEYS = [
   "DEEPSEEK_API_KEY",
